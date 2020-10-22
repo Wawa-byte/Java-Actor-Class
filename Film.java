@@ -4,6 +4,7 @@ public class Film {
 	private String name;
 	private String code;
 
+	// To get the film code
 	public Film(String name) {
 		this.name = name;
 		code = "";
@@ -21,6 +22,15 @@ public class Film {
 	// Setter and getter for Name
 	public void setName(String a) {
 		this.name = a;
+		code = "";
+		for(int i = 0; i < name.length(); i++) {
+			if (i == 0) {
+				code = code + name.charAt(i);
+			}
+			if (name.charAt(i) == ' '){
+				code = code + name.charAt(i + 1);
+			}
+		}
 	}
 	
 	public String getName() {

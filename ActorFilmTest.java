@@ -30,6 +30,7 @@ public class ActorFilmTest {
 
 		System.out.println('\n');
 
+		// Creating an Array list
 		ArrayList<Actor> actorArray = new ArrayList<>();
 		actorArray.add(actor1);
 		actorArray.add(actor2);
@@ -52,5 +53,7 @@ public class ActorFilmTest {
 			actor3.getMyFilms()[0] = new Film("Bambi");
 			actor3.print();
 			actor2.print();
+
+
 	}
 }
